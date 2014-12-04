@@ -6131,3 +6131,23 @@ body {
 .main .label-dark-gray {
   background: #656d78;
   color: #ffffff; }
+
+.main .form-control {
+  border: 3px solid #dddddd;
+  border-radius: 0;
+  padding: 10px 0 10px 15px;
+  min-height: 35px;
+  font-size: 14pt;
+  font-weight: 400;
+  color: a0a0a0; }
+  .main .form-control:hover {
+    border-color: #cccccc; }
+  .main .form-control:focus, .main .form-control.focus {
+    border-color: #f16a6b;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    color: 333333; }
+  .main .form-control:disabled, .main .form-control.disabled {
+    border-color: #dddddd;
+    background: #eeeeee; }
