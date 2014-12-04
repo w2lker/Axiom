@@ -1,0 +1,36 @@
+@mixin label-veriant($color-ground, $color-text)
+	background: $color-ground
+	color: $color-text
+
+.main
+	.label
+		border-radius: 0
+		border: 0
+		@include label-veriant(black, white)
+		font:
+			family: ProximaNova
+			width: 700
+			size: 10pt
+			text-align: left
+	.label-pink
+		@include label-veriant($tag-pink, $tag-text-light)
+	.label-orange
+		@include label-veriant($tag-orange, $tag-text-light)
+	.label-yellow
+		@include label-veriant($tag-yellow, $tag-text-dark)
+	.label-green
+		@include label-veriant($tag-green, $tag-text-light)
+	.label-spring
+		@include label-veriant($tag-spring, $tag-text-light)
+	.label-aqua
+		@include label-veriant($tag-aqua, $tag-text-light)
+	.label-blue
+		@include label-veriant($tag-blue, $tag-text-light)
+	.label-purple
+		@include label-veriant($tag-purple, $tag-text-light)
+	.label-rose
+		@include label-veriant($tag-rose, $tag-text-light)
+	.label-light-gray
+		@include label-veriant($tag-light-gray, $tag-text-dark)
+	.label-dark-gray
+		@include label-veriant($tag-dark-gray, $tag-text-light)

@@ -6036,38 +6036,41 @@ body {
 .main {
   font-family: ProximaNova; }
   .main h1, .main .Mainheader {
-    font-size: 36px;
+    font-size: 36pt;
     font-weight: 300;
     color: #222222; }
   .main h2, .main .Secondaryheader {
-    font-size: 24px;
+    font-size: 24pt;
     font-weight: 400;
     color: #222222; }
   .main h3, .main .Headline {
-    font-size: 18px;
+    font-size: 18pt;
     font-weight: 400;
     color: #222222; }
   .main h4, .main .Smalllinks {
-    font-size: 11px;
+    font-size: 11pt;
     font-weight: 700;
     letter-spacing: 1px;
     color: #222222; }
   .main p, .main .Bodycopy {
-    font-size: 14px;
+    font-size: 14pt;
     font-weight: 400;
     color: #222222; }
   .main .quote {
     font-family: Georgia;
     font-weight: 400;
+    font-size: 14pt;
     font-style: italic;
     color: #222222; }
 
 .main .btn {
+  min-width: 105px;
+  min-heigth: 30px;
   border-radius: 0;
   border: 0;
   font-family: ProximaNova;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 14pt;
+  font-weight: 600;
   color: #ffffff; }
 .main .btn-neutral {
   background: #4fc1e9; }
@@ -6085,3 +6088,46 @@ body {
   background: #999999; }
   .main .btn-disabled:hover, .main .btn-disabled:focus, .main .btn-disabled.focus, .main .btn-disabled:active, .main .btn-disabled.active {
     background: #999999; }
+
+.main .label {
+  border-radius: 0;
+  border: 0;
+  background: black;
+  color: white;
+  font-family: ProximaNova;
+  font-width: 700;
+  font-size: 10pt;
+  font-text-align: left; }
+.main .label-pink {
+  background: #ed5565;
+  color: #ffffff; }
+.main .label-orange {
+  background: #fc6e51;
+  color: #ffffff; }
+.main .label-yellow {
+  background: #ffce54;
+  color: #333333; }
+.main .label-green {
+  background: #a0d468;
+  color: #ffffff; }
+.main .label-spring {
+  background: #48cfad;
+  color: #ffffff; }
+.main .label-aqua {
+  background: #4fc1e9;
+  color: #ffffff; }
+.main .label-blue {
+  background: #5d9cec;
+  color: #ffffff; }
+.main .label-purple {
+  background: #ac92ec;
+  color: #ffffff; }
+.main .label-rose {
+  background: #ec87c0;
+  color: #ffffff; }
+.main .label-light-gray {
+  background: #ccd1d9;
+  color: #333333; }
+.main .label-dark-gray {
+  background: #656d78;
+  color: #ffffff; }

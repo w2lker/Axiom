@@ -1,0 +1,23 @@
+@mixin button-veriant($color-normal, $color-hover)
+	background: $color-normal
+	&:hover, &:focus, &.focus, &:active, &.active  
+		background: $color-hover
+.main
+	.btn
+		min-width: 105px
+		min-heigth: 30px
+		border-radius: 0
+		border: 0
+		font:
+			family: ProximaNova
+			size: 14pt
+			weight: 600
+		color: $btn-text-color
+	.btn-neutral
+		@include button-veriant($btn-neitral-normal, $btn-neitral-hover)
+	.btn-add
+		@include button-veriant($btn-add-normal, $btn-add-hover)
+	.btn-remove
+		@include button-veriant($btn-remove-normal, $btn-remove-hover)
+	.btn-disabled
+		@include button-veriant($btn-disabled, $btn-disabled)
