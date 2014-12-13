@@ -1,0 +1,42 @@
+.main
+	.nav-tabs
+		border: none
+		background: none
+		height: 33px
+		li
+			margin: 3px 10px 0 0
+			height: 27px
+			a
+				border-radius: 0
+				border: none
+				border-top: 3px solid #dddddd
+				background: white
+				margin: 3px 0 0 0
+				padding: 0px 10px
+				height: 27px
+				font:
+					family: ProximaNova
+					size: 14pt
+					weight: 400
+				color: #999999
+				&:hover, &:focus
+					padding: 0px 10px
+					margin: 3px 0 0 0
+					border: none
+					border-top: 3px solid #dddddd
+					color: #4e4e4e
+					background: white
+		.active
+			margin-top: 0
+			height: 27px+3px
+			a, a:hover, a:focus
+				height: 30px
+				border: none
+				border-top: 3px solid #f16a6b
+				font-weight: 700
+				color: #333333
+		.disabled
+			a
+				background: #eeeeee
+	.tab-content
+		background: white

@@ -1,0 +1,32 @@
+.main
+	.btn-group
+		.dropdown-toggle
+			border: $input-border solid $input-border-color-hover
+			border-radius: $border-radius
+			
+			color: $input-text-color
+			&:focus, &.focus
+				@include set-shadow(none)
+		.dropdown-menu
+			border-radius: $border-radius
+			border: 2px solid $input-border-color-hover
+			@include dropdown-base
+			@include button-veriant($btn-dropdown-normal, $btn-dropdown-normal)
+			@include set-shadow(none)
+			padding: 0
+			margin-top: -$input-border
+			li
+				a
+					padding: 10px
+					border: 1px solid $input-border-color-hover
+					color: #3f3f3f
+					font:
+						family: ProximaNova
+						size: 14pt
+						weight: 400
+//		.carpet
+//			position: rigth
+//			top: 50%
+//			right: 12px
+//			margin-top: -2px
+//			vertical-align: middle

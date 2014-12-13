@@ -1,0 +1,17 @@
+.main
+	h1, .Mainheader
+		@include set-font($h1-font-size, $h1-font-weight, $text-color)
+	h2, .Secondaryheader
+		@include set-font($h2-font-size, $h2-font-weight, $text-color)
+	h3, .Headline
+		@include set-font($h3-font-size, $h2-font-weight, $text-color)
+	h4, .Smalllinks
+		@include set-font($h4-font-size, $h4-font-weight, $text-color)
+		letter-spacing: 1px
+	p, .Bodycopy
+		@include set-font($p-font-size, $p-font-weight, $text-color)
+	.quote
+		@include set-font($quote-font-size, $quote-font-weight, $text-color)
+		font:
+			family: Georgia
+			style: italic

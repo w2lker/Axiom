@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'ChevinPro';
+  src: url("/assets/fonts/Chevin-Pro/Chevin-Pro-ExtraBold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal; }
+@font-face {
+  font-family: 'ChevinPro';
+  src: url("/assets/fonts/Chevin-Pro/Chevin-Pro-ExtraBold-Italic.otf") format("opentype");
+  font-weight: 800;
+  font-style: italic; }
+@font-face {
+  font-family: 'ChevinPro';
+  src: url("/assets/fonts/Chevin-Pro/Chevin-Pro-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'ChevinPro';
+  src: url("/assets/fonts/Chevin-Pro/Chevin-Pro-Bold-Italic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic; }
+@font-face {
+  font-family: 'ChevinPro';
+  src: url("/assets/fonts/Chevin-Pro/Chevin-Pro-DemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: 'ChevinPro';
+  src: url("/assets/fonts/Chevin-Pro/Chevin-Pro-DemiBold-Italic.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic; }
+@font-face {
+  font-family: 'ChevinPro';
+  src: url("/assets/fonts/Chevin-Pro/Chevin-Pro-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'ChevinPro';
+  src: url("/assets/fonts/Chevin-Pro/Chevin-Pro-Light-Italic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic; }
+@font-face {
+  font-family: 'ChevinPro';
+  src: url("/assets/fonts/Chevin-Pro/Chevin-Pro-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'ChevinPro';
+  src: url("/assets/fonts/Chevin-Pro/Chevin-Pro-Medium-Italic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic; }
+@font-face {
+  font-family: 'ChevinPro';
+  src: url("/assets/fonts/Chevin-Pro/Chevin-Pro-Thin.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal; }
+@font-face {
+  font-family: 'ChevinPro';
+  src: url("/assets/fonts/Chevin-Pro/Chevin-Pro-Thin-Italic.otf") format("opentype");
+  font-weight: 100;
+  font-style: italic; }
+
+/*# sourceMappingURL=ChevinPro.css.map */

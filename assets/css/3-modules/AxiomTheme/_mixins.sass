@@ -1,0 +1,48 @@
+//General mixins
+@mixin hide-shadow 
+	outline: none
+	box-shadow: none !important
+	-webkit-box-shadow: none !important
+	-moz-box-shadow: none !important
+
+@mixin set-font($size, $weight, $color)
+	font:
+		family: $def-font-family
+		size: $size
+		weight: $weight
+	color: $color
+
+@mixin hide-border
+	border-radius: 0
+	border: none
+
+@mixin set-border($width, $color)
+	border-radius: 0
+	border: $width solid $color
+
+@mixin min-size($width, $heigth)
+	min-width: $width
+	min-heigth: $heigth
+
+@mixin set-size($width, $heigth)
+	width: $width
+	heigth: $heigth
+
+//Buttons mixins
+@mixin set-background($color-normal, $color-hover)
+	background: $color-normal
+	&:hover, &:focus, &.focus, &:active, &.active  
+		background: $color-hover
+
+//Dropdown mixins
+@mixin dropdown-base($color)
+	@include min-size($dropdown-min-width, $dropdown-min-heigth)
+	@include set-font($dropdown-font-size, $dropdown-font-weight, $color)
+	@include set-border($dropdown-border-width, $btn-dropdown-border-color)
+	text-align: left
+	padding: 10px
+
+//Tags mixins
+@mixin label-veriant($color-ground, $color-text)
+	background: $color-ground
+	color: $color-text

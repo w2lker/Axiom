@@ -1,8 +1,3 @@
-@mixin set-shadow($radius)
-	box-shadow: $radius
-	-webkit-box-shadow: $radius
-	-moz-box-shadow: $radius
-
 .main
 	.form-control
 		border: $input-border solid $input-border-color-normal
@@ -17,8 +12,8 @@
 			border-color: $input-border-color-hover
 		&:focus, &.focus
 			border-color: $input-border-color-focus
-			@include set-shadow(none)
 			color: $input-focus-text-color
+			@include set-shadow(none)
 		&:disabled, &.disabled
 			border-color: $input-border-color-disabled
 			background: $input-background-color-disabled

@@ -1,55 +1,315 @@
-<div class='main'>
+<div class='main' style="padding: 10px;">
 	<h1> Buttons </h1>
-	<br>
-	<button type="button" class="btn btn-neutral"> 
-		<span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Settings
-	</button>
+	<div class='showbox'>
+		<button type="button" class="btn btn-neutral" style="margin: 10px;"> 
+			<span class="axiom-glyphicon axiomicon-settings" aria-hidden="true"></span> Settings
+		</button>
 
-	<button type="button" class="btn btn-add">
-	  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add
-	</button>
+		<button type="button" class="btn btn-add" style="margin: 10px;">
+		  <span class="axiom-glyphicon axiomicon-add" aria-hidden="true" ></span> Add
+		</button>
 
-	<button type="button" class="btn btn-remove">
-	  <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Remove
-	</button>
+		<button type="button" class="btn btn-remove" style="margin: 10px;">
+		  <span class="axiom-glyphicon axiomicon-remove" aria-hidden="true"></span> Remove
+		</button>
 
-	<button type="button" class="btn btn-disabled">
-	  <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Disabled
-	</button>
+		<button type="button" class="btn btn-disabled" style="margin: 10px;">
+		  <span class="axiom-glyphicon axiomicon-close" aria-hidden="true"></span> Disabled
+		</button>
+	</div>
 	
 
 	<h1 font-size: 40px> TYPOGRAPHY </h1>
-	<br>
-	<h1> Main header </h1>
-	<h1> Main header </h1>
-	<h2> Secondary header </h2>
-	<h3> Headline </h3>
-	<h4> Small links </h4>
-	<p> Bodycopy </p>
-	<p class="quote"> Some quotes </p>
-
-	<span class="label label-pink">ABCDEFGHJKLMN</span>
-	<span class="label label-orange">OPQRSTUVWQXZ</span>
-	<span class="label label-yellow">123456789</span>
-	<span class="label label-green">TAG NAME</span>
-	<span class="label label-spring">TAG NAME</span>
-	<span class="label label-aqua">TAG NAME</span>
-	<span class="label label-blue">TAG NAME</span>
-	<span class="label label-purple">TAG NAME</span>
-	<span class="label label-rose">TAG NAME</span>
-	<span class="label label-light-gray">TAG NAME</span>
-	<span class="label label-dark-gray">TAG NAME</span>
-
-	<h1> Input Field </h1>
-	<br>
-	<div class="col-md-12">
-	<input type="text" class="form-control" placeholder="Text input">
-	<br>
-	<input type="text" class="form-control" placeholder="Text input" disabled>
-	<br>
-	<textarea class="form-control" rows="5">Lorem Ipsum</textarea>
-	<br>
-	<textarea class="form-control" rows="5" disabled>Lorem Ipsum</textarea>
+	<div class="showbox">
+	<h1 style="margin: 10px;"> Main header </h1>
+	<h2 style="margin: 10px;"> Secondary header </h2>
+	<h3 style="margin: 10px;"> Headline </h3>
+	<h4 style="margin: 10px;"> Small links </h4>
+	<p style="margin: 10px;"> Bodycopy </p>
+	<p class="quote" style="margin: 10px;"> Some quotes </p>
 	</div>
-	<h1 style='text-align: center; padding: 50px'> That's All Folks </h1>
+	<h1> Labels </h1>
+	<div class="showbox">
+		<div class="row" style="margin: 20px;">
+			<span class="label label-pink" style="margin: 10px;">ABCDEFGHJKLMN</span>
+			<span class="label label-orange" style="margin: 10px;">OPQRSTUVWQXZ</span>
+			<span class="label label-yellow" style="margin: 10px;">1234567890</span>
+		</div>
+		<div class="row" style="margin: 20px;">
+			<span class="label label-green" style="margin: 10px;">TAG NAME</span>
+			<span class="label label-spring" style="margin: 10px;">TAG NAME</span>
+			<span class="label label-aqua" style="margin: 10px;">TAG NAME</span>
+		</div>
+		<div class="row" style="margin: 20px;">
+			<span class="label label-blue" style="margin: 10px;">TAG NAME</span>
+			<span class="label label-purple" style="margin: 10px;">TAG NAME</span>
+			<span class="label label-rose" style="margin: 10px;">TAG NAME</span>
+		</div>
+		<div class="row" style="margin: 20px;">
+			<span class="label label-light-gray" style="margin: 10px;">TAG NAME</span>
+			<span class="label label-dark-gray"style="margin: 10px;">TAG NAME</span>
+		</div>
+	</div>
+	<h1> Input Field </h1>
+	<div class="showbox">
+		<input type="text" class="form-control" placeholder="Text input">
+		<br>
+		<input type="text" class="form-control" placeholder="Text input" disabled>
+		<br>
+		<textarea class="form-control" rows="5" placeholder="Text input"> </textarea>
+		<br>
+		<textarea class="form-control" rows="5" disabled placeholder="Text input"></textarea>
+	</div>
+	
+	<h1> Dropdownd </h1>
+	<div class="showbox">
+		<div class="btn-group" role="group">
+	    	<button type="button" class="btn btn-dropdown dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+	      		Dropdown
+	      		<span class="caret"></span>
+	    	</button>
+	    	<ul class="dropdown-menu" role="menu">
+	      		<li><a href="#">First Dropdown</a></li>
+				<li><a href="#">Second Dropdown</a></li>
+			</ul>
+	    </div>
+    </div>
+
+	<h1>Alerts</h1>
+	<div class="showbox" style="width: 800px">
+
+
+		<div class="alert alert-success alert-dismissible" role="alert">
+	  		<button type="button" class="close" data-dismiss="alert">
+		  		<span aria-hidden="true">&times;</span>
+		  		<span class="sr-only"> 
+		  			Close
+		  		</span>
+	  		</button>
+	  		<span class="icon axiom-glyphicon axiomicon-ok" aria-hidden="true" style="font-size: 30pt;"></span> You a succesfully logined to the admin part.
+		</div>
+
+
+		<div class="alert alert-warning alert-dismissible" role="alert">
+	  		<button type="button" class="close" data-dismiss="alert">
+				<span  aria-hidden="true">&times;</span>
+	  			<span class="sr-only">Close</span>
+	  		</button>
+	  		<span class="icon axiom-glyphicon axiomicon-warning" aria-hidden="true" style="font-size: 30pt;"></span> Your browser doesn't support cookies. Please, enable that.
+		</div>
+
+
+		<div class="alert alert-danger alert-dismissible" role="alert">
+	  		<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	  		<span class="icon axiom-glyphicon axiomicon-non-ok" aria-hidden="true" style="font-size: 30pt;"></span></span> Something was wrong and AXIOM get error. Sorry.
+		</div>
+	</div>
+<div class="content" style="margin: 10px">
+	<ul id="myTab" class="nav nav-tabs">
+		<li class="active"><a data-toggle="tab" href="#firsttab">Firsttab</a></li>
+		<li><a data-toggle="tab" href="#secondtab">Secondtab</a></li>
+		<li class="disabled"><a data-toggle="tab" href="#tab3">Disabled tab</a></li>
+	</ul>
+	<div id="myTabContent" class="tab-content">
+		<div id="firsttab" class="tab-pane fade active in">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, architecto. </p>
+		</div>
+		<div id="secondtab" class="tab-pane fade">
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat porro provident non omnis, fugit iusto? </p>
+		</div>
+		<div id="tab3" class="tab-pane fade disabled">
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt labore id numquam commodi. Non provident aperiam placeat eius blanditiis, inventore. </p>
+		</div>
+	</div>
+</div>
+<h1> Icons </h1>
+	<div class="iconlist-container">
+		<div class="thumb">
+			<div class="content">
+				<span class="axiom-glyphicon axiomicon-broken-link"></span>
+				<p>axiom-glyphicon axiomicon-broken-link.</p>
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<span class="axiom-glyphicon axiomicon-font-size"></span>
+				<p>axiom-glyphicon axiomicon-font-size</p>
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<span class="axiom-glyphicon axiomicon-numbered-list"></span>
+				<p>axiom-glyphicon axiomicon-numbered-list.</p>
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<span class="axiom-glyphicon axiomicon-ok"></span>
+				<p>axiom-glyphicon axiomicon-ok</p>
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<span class="axiom-glyphicon axiomicon-quote"></span>
+				<p>axiom-glyphicon axiomicon-quote</p>
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<span class="axiom-glyphicon axiomicon-remove"></span>
+				<p>axiom-glyphicon axiomicon-remove</p>
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<span class="axiom-glyphicon axiomicon-reposition"></span>
+				<p>axiom-glyphicon axiomicon-reposition</p>
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<span class="axiom-glyphicon axiomicon-rigth"></span>
+				<p>axiom-glyphicon axiomicon-rigth</p>
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<span class="axiom-glyphicon axiomicon-settings"></span>
+				<p>axiom-glyphicon axiomicon-settings</p>
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<span class="axiom-glyphicon axiomicon-stroke"></span>
+				<p>axiom-glyphicon axiomicon-stroke</p>
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<span class="axiom-glyphicon axiomicon-underline"></span>
+				<p>axiom-glyphicon axiomicon-underline</p>
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<span class="axiom-glyphicon axiomicon-video"></span>
+				<p>axiom-glyphicon axiomicon-video</p>
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<span class="axiom-glyphicon axiomicon-warning"></span>
+				<p>axiom-glyphicon axiomicon-warning</p>
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<span class="axiom-glyphicon axiomicon-add"></span>
+				<p>axiom-glyphicon axiomicon-add</p>
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<span class="axiom-glyphicon axiomicon-audio"></span>
+				<p>axiom-glyphicon axiomicon-audio</p>
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<span class="axiom-glyphicon axiomicon-bold"></span>
+				<p>axiom-glyphicon axiomicon-bold</p>
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<span class="axiom-glyphicon axiomicon-break"></span>
+				<p>axiom-glyphicon axiomicon-break</p>
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<span class="axiom-glyphicon axiomicon-center"></span>
+				<p>axiom-glyphicon axiomicon-center</p>
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<span class="axiom-glyphicon axiomicon-close"></span>
+				<p>axiom-glyphicon axiomicon-close</p>
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<span class="axiom-glyphicon axiomicon-doted-list"></span>
+				<p>axiom-glyphicon axiomicon-doted-list</p>
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<span class="axiom-glyphicon axiomicon-color"></span>
+				<p>axiom-glyphicon axiomicon-color</p>
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<span class="axiom-glyphicon axiomicon-edit"></span>
+				<p>axiom-glyphicon axiomicon-edit</p>
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<span class="axiom-glyphicon axiomicon-font-family"></span>
+				<p>axiom-glyphicon axiomicon-font-family</p>
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<span class="axiom-glyphicon axiomicon-full-screen"></span>
+				<p>axiom-glyphicon axiomicon-full-screen</p>
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<span class="axiom-glyphicon axiomicon-image"></span>
+				<p>axiom-glyphicon axiomicon-image</p>
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<span class="axiom-glyphicon axiomicon-italic"></span>
+				<p>axiom-glyphicon axiomicon-italic</p>
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<span class="axiom-glyphicon axiomicon-justify"></span>
+				<p>axiom-glyphicon axiomicon-justify</p>
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<span class="axiom-glyphicon axiomicon-left"></span>
+				<p>axiom-glyphicon axiomicon-left</p>
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<span class="axiom-glyphicon axiomicon-link"></span>
+				<p>axiom-glyphicon axiomicon-link</p>
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<span class="axiom-glyphicon axiomicon-more"></span>
+				<p>axiom-glyphicon axiomicon-more</p>
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<span class="axiom-glyphicon axiomicon-non-ok"></span>
+				<p>axiom-glyphicon axiomicon-non-ok</p>
+			</div>
+		</div>
+	</div>
+	<h1 style='text-align: center; padding: 50px; clear: both;'> That's All Folks </h1>
 </div>

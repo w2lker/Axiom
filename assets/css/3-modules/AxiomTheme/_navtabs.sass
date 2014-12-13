@@ -1,0 +1,31 @@
+.main
+	.nav-tabs
+		@include hide-border
+		height: $nav-normal-heigth + 6px
+		li
+			margin: $nav-border-width $nav-padding-left 0 0
+			height: $nav-normal-heigth
+			a, a:hover, a:focus
+				@include hide-border
+				border-top: $nav-border-width solid $nav-border-color
+				background: white
+				margin: $nav-border-width 0 0 0
+				padding: 0px $nav-padding-left
+			a
+				@include set-font($nav-text-size, $nav-text-weight, $nav-text-color)
+				height: $nav-normal-heigth
+				&:hover, &:focus
+					color: $nav-focus-text-color
+		.active
+			margin-top: 0
+			height: $nav-normal-heigth+$nav-border-width
+			a, a:hover, a:focus
+				@include hide-border
+				@include set-font($nav-focus-text-size, $nav-focus-text-weight, $nav-focus-text-color)
+				height: $nav-normal-heigth+$nav-border-width
+				border-top: $nav-border-width solid $nav-focus-border-color
+		.disabled
+			a
+				background: $nav-disabled-background-color
+	.tab-content
+		background: $nav-background-color

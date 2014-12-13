@@ -1,0 +1,25 @@
+.main
+	.btn
+		@include hide-border
+		@include min-size($btn-min-width, $btn-min-heigth)
+		@include set-font($btn-font-size, $btn-font-weight, $btn-text-color)
+		padding: 10px
+		&:hover, &:focus, &.focus, &:active, &.active
+			@include hide-shadow 
+	.btn-neutral
+		@include set-background($btn-neitral-normal, $btn-neitral-hover)
+	.btn-add
+		@include set-background($btn-add-normal, $btn-add-hover)
+	.btn-remove
+		@include set-background($btn-remove-normal, $btn-remove-hover)
+	.btn-disabled
+		@include set-background($btn-disabled, $btn-disabled)
+	.btn-dropdown
+		font-weight: 300 !important
+		@include dropdown-base($dropdown-text)
+		@include set-background($dropdown-normal, $dropdown-hover)
+		&:hover
+			background: $dropdown-hover
+		&:focus, &.focus, &:active, &.active
+			background: $dropdown-normal
+			color: $dropdown-active-color

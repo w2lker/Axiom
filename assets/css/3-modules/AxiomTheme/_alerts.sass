@@ -1,0 +1,18 @@
+.main
+	.alert
+		@include hide-border
+		@include set-font($alert-font-size, $alert-font-weight, $alert-font-color)
+		.icon
+			horizontal-align: center
+			font-size: 20pt
+			opacity: $alert-icon-opacity
+		&:hover, &:focus, &.focus
+			.icon
+				opacity: $alert-icon-opacity-hover
+	.alert-success
+		@include set-background($alert-success-normal, $alert-success-hover)
+	.alert-warning
+		@include set-background($alert-warning-normal, $alert-warning-hover)
+		color: $alert-warning-text
+	.alert-danger
+		@include set-background($alert-danger-normal, $alert-danger-hover)

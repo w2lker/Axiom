@@ -1,0 +1,16 @@
+.main
+	.alert
+		border-radius: $border-radius
+		border: $border-radius
+		font:
+			family: ProximaNova
+			size: 18pt
+			weight: 400
+		color: white
+	.alert-success
+		@include button-veriant($alert-success-normal, $alert-success-hover)
+	.alert-warning
+		@include button-veriant($alert-warning-normal, $alert-warning-hover)
+		color: $alert-warning-text
+	.alert-danger
+		@include button-veriant($alert-danger-normal, $alert-danger-hover)

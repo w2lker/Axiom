@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8054) - http://www.bohemiancoding.com/sketch -->
+    <title>warning</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="warning" sketch:type="MSArtboardGroup">
+            <g id="Triangle-1-+-Triangle-2-+-Oval-1" sketch:type="MSLayerGroup" transform="translate(2.000000, 3.000000)">
+                <path d="M12.3046388,10.0880916 C12.0743254,9.14409537 12.6810199,8.37883523 13.6470481,8.37883523 L14.4538929,8.37883523 C15.4255986,8.37883523 16.0251664,9.15003573 15.7963022,10.0880916 L14.46749,15.534554 C14.2371765,16.4785502 13.8623152,16.4726098 13.6334511,15.534554 L12.3046388,10.0880916 Z" id="Triangle-2" fill="#000201" sketch:type="MSShapeGroup"></path>
+                <path d="M14.0188633,19.4055398 C14.5104943,19.4055398 14.90904,18.9941378 14.90904,18.4866477 C14.90904,17.9791577 14.5104943,17.5677557 14.0188633,17.5677557 C13.5272323,17.5677557 13.1286866,17.9791577 13.1286866,18.4866477 C13.1286866,18.9941378 13.5272323,19.4055398 14.0188633,19.4055398 Z" id="Oval-1" fill="#000201" sketch:type="MSShapeGroup"></path>
+                <path d="M16.7234077,3.86342052 L25.5131924,18.5174738 C27.0986943,21.1607729 26.0550818,23 22.9721028,23 L4.99571228,23 C1.91121078,23 0.869561395,21.1600383 2.4546227,18.5174738 L11.2444074,3.86342052 C12.8415718,1.20067812 15.1268393,1.20167168 16.7234077,3.86342052 Z M0.73950017,17.4887102 C-1.64508591,21.4642173 0.356611156,25 4.99571228,25 L22.9721028,25 C27.6085858,25 29.6139058,21.4658925 27.2283149,17.4887102 L18.4385302,2.83465685 C16.0654513,-1.12166593 11.9034492,-1.12347544 9.52928484,2.83465685 L0.73950017,17.4887102 Z" id="Triangle-1" fill="#030303" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

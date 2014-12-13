@@ -2,6 +2,25 @@
 	background: $color-normal
 	&:hover, &:focus, &.focus, &:active, &.active  
 		background: $color-hover
+
+@mixin set-shadow($shadow)
+	outline: $shadow
+	box-shadow: $shadow !important
+	-webkit-box-shadow: $shadow !important
+	-moz-box-shadow: $shadow !important
+@mixin dropdown-base
+	min-width: 200px
+	font:
+		family: ProximaNova
+		size: 14pt
+		weight: 400
+	color: $btn-dropdown-text
+	padding-left: 10px
+	text-align: left
+	border: $btn-dropdown-border-color solid 3
+	padding: 10px
+	
+
 .main
 	.btn
 		min-width: 105px
@@ -13,6 +32,8 @@
 			size: 14pt
 			weight: 600
 		color: $btn-text-color
+		&:hover, &:focus, &.focus, &:active, &.active
+			@include set-shadow(none) 
 	.btn-neutral
 		@include button-veriant($btn-neitral-normal, $btn-neitral-hover)
 	.btn-add
@@ -21,3 +42,10 @@
 		@include button-veriant($btn-remove-normal, $btn-remove-hover)
 	.btn-disabled
 		@include button-veriant($btn-disabled, $btn-disabled)
+	.btn-dropdown
+		font-weight: 300 !important
+		@include dropdown-base
+		@include button-veriant($btn-dropdown-normal, $btn-dropdown-hover)
+		&:focus, &.focus, &:active, &.active
+			background: $btn-dropdown-normal
+			color: $btn-active-color

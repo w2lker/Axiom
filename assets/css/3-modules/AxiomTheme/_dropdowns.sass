@@ -1,0 +1,23 @@
+.main
+	.btn-group
+		.dropdown-toggle
+			@include dropdown-base($dropdown-text)
+			&:focus, &.focus
+				@include hide-shadow
+		.dropdown-menu
+			border-radius: none
+			@include dropdown-base($dropdown-text)
+			@include set-background($btn-dropdown-normal, $btn-dropdown-normal)
+			@include hide-shadow
+			@include set-border($dropdown-border-width - 1, $btn-dropdown-border-color)
+			padding: 0
+			margin-top: -$dropdown-border-width
+			li
+				a
+					@include set-font($dropdown-font-size, $dropdown-font-weight, $dropdown-active-color)
+					padding: 10px
+					border: $dropdown-devider-width solid $dropdown-border-color
+			&:hover, &:focus, &.focus, &:active, &.active
+				@include hide-shadow
+		.dropdown-selected
+			color: $dropdown-active-color

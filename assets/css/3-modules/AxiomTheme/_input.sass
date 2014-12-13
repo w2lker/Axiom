@@ -1,0 +1,15 @@
+.main
+	.form-control
+		@include set-border($input-border-width, $input-border-color-normal)
+		@include min-size($input-min-width, $input-min-heigth)
+		@include set-font($input-font-size, $input-font-weight, $input-text-color)
+		padding: 10px 0 10px 15px
+		&:hover
+			border-color: $input-border-color-hover
+		&:focus, &.focus
+			border-color: $input-border-color-focus
+			color: $input-focus-text-color
+			@include hide-shadow
+		&:disabled, &.disabled
+			border-color: $input-border-color-disabled
+			background: $input-background-color-disabled
