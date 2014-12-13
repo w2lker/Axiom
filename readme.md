@@ -107,7 +107,7 @@
 ###Gliphicons
 Here might be some description. But I have no idea what could I print right here. All info about gliphs you can find in table on live-preview link
 
-##Things is got to be fixed in next releases
+##Things are got to be fixed in next releases
 1. Right pagging and margins in elements
 2. Input-field on active: content doesn't change color like in design-file
 3. Alert close button now bootstrap design

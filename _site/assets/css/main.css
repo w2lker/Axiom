@@ -802,7 +802,7 @@ th {
   font-family: 'Glyphicons Halflings';
   src: url(font-path("bootstrap/glyphicons-halflings-regular.eot"));
   src: url(font-path("bootstrap/glyphicons-halflings-regular.eot?#iefix")) format("embedded-opentype"), url(font-path("bootstrap/glyphicons-halflings-regular.woff")) format("woff"), url(font-path("bootstrap/glyphicons-halflings-regular.ttf")) format("truetype"), url(font-path("bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular")) format("svg"); }
-.glyphicon {
+.glyphicon, .axiom-glyphicon {
   position: relative;
   top: 1px;
   display: inline-block;
@@ -6033,45 +6033,55 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
 
-.main {
-  font-family: ProximaNova; }
-  .main h1, .main .Mainheader {
-    font-size: 36pt;
-    font-weight: 300;
-    color: #222222; }
-  .main h2, .main .Secondaryheader {
-    font-size: 24pt;
-    font-weight: 400;
-    color: #222222; }
-  .main h3, .main .Headline {
-    font-size: 18pt;
-    font-weight: 400;
-    color: #222222; }
-  .main h4, .main .Smalllinks {
-    font-size: 11pt;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: #222222; }
-  .main p, .main .Bodycopy {
-    font-size: 14pt;
-    font-weight: 400;
-    color: #222222; }
-  .main .quote {
-    font-family: Georgia;
-    font-weight: 400;
-    font-size: 14pt;
-    font-style: italic;
-    color: #222222; }
+.main h1, .main .Mainheader {
+  font-family: ProximaNova;
+  font-size: 36pt;
+  font-weight: 300;
+  color: #222222; }
+.main h2, .main .Secondaryheader {
+  font-family: ProximaNova;
+  font-size: 24pt;
+  font-weight: 400;
+  color: #222222; }
+.main h3, .main .Headline {
+  font-family: ProximaNova;
+  font-size: 18pt;
+  font-weight: 400;
+  color: #222222; }
+.main h4, .main .Smalllinks {
+  font-family: ProximaNova;
+  font-size: 11pt;
+  font-weight: 700;
+  color: #222222;
+  letter-spacing: 1px; }
+.main p, .main .Bodycopy {
+  font-family: ProximaNova;
+  font-size: 14pt;
+  font-weight: 400;
+  color: #222222; }
+.main .quote {
+  font-family: ProximaNova;
+  font-size: 14pt;
+  font-weight: 400;
+  color: #222222;
+  font-family: Georgia;
+  font-style: italic; }
 
 .main .btn {
+  border-radius: 0;
+  border: none;
   min-width: 105px;
   min-heigth: 30px;
-  border-radius: 0;
-  border: 0;
   font-family: ProximaNova;
   font-size: 14pt;
   font-weight: 600;
-  color: #ffffff; }
+  color: #ffffff;
+  padding: 10px; }
+  .main .btn:hover, .main .btn:focus, .main .btn.focus, .main .btn:active, .main .btn.active {
+    outline: none;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important; }
 .main .btn-neutral {
   background: #4fc1e9; }
   .main .btn-neutral:hover, .main .btn-neutral:focus, .main .btn-neutral.focus, .main .btn-neutral:active, .main .btn-neutral.active {
@@ -6088,16 +6098,38 @@ body {
   background: #999999; }
   .main .btn-disabled:hover, .main .btn-disabled:focus, .main .btn-disabled.focus, .main .btn-disabled:active, .main .btn-disabled.active {
     background: #999999; }
+.main .btn-dropdown {
+  font-weight: 300 !important;
+  min-width: 200px;
+  min-heigth: 30px;
+  font-family: ProximaNova;
+  font-size: 14pt;
+  font-weight: 400;
+  color: #999999;
+  border-radius: 0;
+  border: 3px solid #bbbbbb;
+  text-align: left;
+  padding: 10px;
+  background: #ffffff; }
+  .main .btn-dropdown:hover, .main .btn-dropdown:focus, .main .btn-dropdown.focus, .main .btn-dropdown:active, .main .btn-dropdown.active {
+    background: #eeeeee; }
+  .main .btn-dropdown:hover {
+    background: #eeeeee; }
+  .main .btn-dropdown:focus, .main .btn-dropdown.focus, .main .btn-dropdown:active, .main .btn-dropdown.active {
+    background: #ffffff;
+    color: #333333; }
 
 .main .label {
   border-radius: 0;
-  border: 0;
+  border: none;
   background: black;
   color: white;
   font-family: ProximaNova;
-  font-width: 700;
   font-size: 10pt;
-  font-text-align: left; }
+  font-weight: 700;
+  color: white;
+  text-align: left;
+  padding: 8px; }
 .main .label-pink {
   background: #ed5565;
   color: #ffffff; }
@@ -6133,21 +6165,284 @@ body {
   color: #ffffff; }
 
 .main .form-control {
-  border: 3px solid #dddddd;
   border-radius: 0;
-  padding: 10px 0 10px 15px;
-  min-height: 35px;
+  border: 3px solid #dddddd;
+  min-width: 330px;
+  min-heigth: 35px;
+  font-family: ProximaNova;
   font-size: 14pt;
   font-weight: 400;
-  color: a0a0a0; }
+  color: #999999;
+  padding: 10px 0 10px 15px; }
   .main .form-control:hover {
     border-color: #cccccc; }
   .main .form-control:focus, .main .form-control.focus {
     border-color: #f16a6b;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    color: 333333; }
+    color: 333333;
+    outline: none;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important; }
   .main .form-control:disabled, .main .form-control.disabled {
     border-color: #dddddd;
     background: #eeeeee; }
+
+.main .btn-group .dropdown-toggle {
+  min-width: 200px;
+  min-heigth: 30px;
+  font-family: ProximaNova;
+  font-size: 14pt;
+  font-weight: 400;
+  color: #999999;
+  border-radius: 0;
+  border: 3px solid #bbbbbb;
+  text-align: left;
+  padding: 10px; }
+  .main .btn-group .dropdown-toggle:focus, .main .btn-group .dropdown-toggle.focus {
+    outline: none;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important; }
+.main .btn-group .dropdown-menu {
+  border-radius: none;
+  min-width: 200px;
+  min-heigth: 30px;
+  font-family: ProximaNova;
+  font-size: 14pt;
+  font-weight: 400;
+  color: #999999;
+  border-radius: 0;
+  border: 3px solid #bbbbbb;
+  text-align: left;
+  padding: 10px;
+  background: #ffffff;
+  outline: none;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  border-radius: 0;
+  border: 2px solid #bbbbbb;
+  padding: 0;
+  margin-top: -3px; }
+  .main .btn-group .dropdown-menu:hover, .main .btn-group .dropdown-menu:focus, .main .btn-group .dropdown-menu.focus, .main .btn-group .dropdown-menu:active, .main .btn-group .dropdown-menu.active {
+    background: #ffffff; }
+  .main .btn-group .dropdown-menu li a {
+    font-family: ProximaNova;
+    font-size: 14pt;
+    font-weight: 400;
+    color: #333333;
+    padding: 10px;
+    border: 1px solid #bbbbbb; }
+  .main .btn-group .dropdown-menu:hover, .main .btn-group .dropdown-menu:focus, .main .btn-group .dropdown-menu.focus, .main .btn-group .dropdown-menu:active, .main .btn-group .dropdown-menu.active {
+    outline: none;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important; }
+.main .btn-group .dropdown-selected {
+  color: #333333; }
+
+.main .nav-tabs {
+  border-radius: 0;
+  border: none;
+  height: 33px; }
+  .main .nav-tabs li {
+    margin: 3px 10px 0 0;
+    height: 27px; }
+    .main .nav-tabs li a, .main .nav-tabs li a:hover, .main .nav-tabs li a:focus {
+      border-radius: 0;
+      border: none;
+      border-top: 3px solid #dddddd;
+      background: white;
+      margin: 3px 0 0 0;
+      padding: 0px 10px; }
+    .main .nav-tabs li a {
+      font-family: ProximaNova;
+      font-size: 14pt;
+      font-weight: 400;
+      color: #999999;
+      height: 27px; }
+      .main .nav-tabs li a:hover, .main .nav-tabs li a:focus {
+        color: #333333; }
+  .main .nav-tabs .active {
+    margin-top: 0;
+    height: 30px; }
+    .main .nav-tabs .active a, .main .nav-tabs .active a:hover, .main .nav-tabs .active a:focus {
+      border-radius: 0;
+      border: none;
+      font-family: ProximaNova;
+      font-size: 14pt;
+      font-weight: 400;
+      color: #333333;
+      height: 30px;
+      border-top: 3px solid #f16a6b; }
+  .main .nav-tabs .disabled a {
+    background: #eeeeee; }
+.main .tab-content {
+  background: #ffffff; }
+
+.main .alert {
+  border-radius: 0;
+  border: none;
+  font-family: ProximaNova;
+  font-size: 18pt;
+  font-weight: 400;
+  color: #ffffff; }
+  .main .alert .icon {
+    horizontal-align: center;
+    font-size: 20pt;
+    opacity: 0.7; }
+  .main .alert:hover .icon, .main .alert:focus .icon, .main .alert.focus .icon {
+    opacity: 1; }
+.main .alert-success {
+  background: #a0d468; }
+  .main .alert-success:hover, .main .alert-success:focus, .main .alert-success.focus, .main .alert-success:active, .main .alert-success.active {
+    background: #8cc152; }
+.main .alert-warning {
+  background: #ffce54;
+  color: #333333; }
+  .main .alert-warning:hover, .main .alert-warning:focus, .main .alert-warning.focus, .main .alert-warning:active, .main .alert-warning.active {
+    background: #f6bb42; }
+.main .alert-danger {
+  background: #fc6e51; }
+  .main .alert-danger:hover, .main .alert-danger:focus, .main .alert-danger.focus, .main .alert-danger:active, .main .alert-danger.active {
+    background: #e9573f; }
+
+@font-face {
+  font-family: "frontello";
+  src: url("/assets/fonts/Axiom/axiom-glyphicons.eot?34412072");
+  src: url("/assets/fonts/Axiom/axiom-glyphicons.eot?34412072#iefix") format("embedded-opentype"), url("/assets/fonts/Axiom/axiom-glyphicons.woff?34412072") format("woff"), url("/assets/fonts/Axiom/axiom-glyphicons.ttf?34412072") format("truetype"), url("/assets/fonts/Axiom/axiom-glyphicons.svg?34412072#frontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+.axiom-glyphicon {
+  font-family: 'frontello';
+  font-style: normal;
+  border-color: green; }
+
+.axiomicon-font-size:before {
+  content: "\e800"; }
+
+.axiomicon-numbered-list:before {
+  content: "\e801"; }
+
+.axiomicon-ok:before {
+  content: "\e802"; }
+
+.axiomicon-quote:before {
+  content: "\e803"; }
+
+.axiomicon-remove:before {
+  content: "\e804"; }
+
+.axiomicon-reposition:before {
+  content: "\e805"; }
+
+.axiomicon-rigth:before {
+  content: "\e806"; }
+
+.axiomicon-settings:before {
+  content: "\e807"; }
+
+.axiomicon-stroke:before {
+  content: "\e808"; }
+
+.axiomicon-underline:before {
+  content: "\e809"; }
+
+.axiomicon-video:before {
+  content: "\e80a"; }
+
+.axiomicon-warning:before {
+  content: "\e80b"; }
+
+.axiomicon-add:before {
+  content: "\e80c"; }
+
+.axiomicon-audio:before {
+  content: "\e80d"; }
+
+.axiomicon-bold:before {
+  content: "\e80e"; }
+
+.axiomicon-break:before {
+  content: "\e80f"; }
+
+.axiomicon-broken-link:before {
+  content: "\e810"; }
+
+.axiomicon-center:before {
+  content: "\e811"; }
+
+.axiomicon-close:before {
+  content: "\e812"; }
+
+.axiomicon-doted-list:before {
+  content: "\e813"; }
+
+.axiomicon-color:before {
+  content: "\e814"; }
+
+.axiomicon-edit:before {
+  content: "\e815"; }
+
+.axiomicon-font-family:before {
+  content: "\e816"; }
+
+.axiomicon-full-screen:before {
+  content: "\e817"; }
+
+.axiomicon-image:before {
+  content: "\e818"; }
+
+.axiomicon-italic:before {
+  content: "\e819"; }
+
+.axiomicon-justify:before {
+  content: "\e81a"; }
+
+.axiomicon-left:before {
+  content: "\e81b"; }
+
+.axiomicon-link:before {
+  content: "\e81c"; }
+
+.axiomicon-more:before {
+  content: "\e81d"; }
+
+.axiomicon-non-ok:before {
+  content: "\e81e"; }
+
+.main .iconlist-container {
+  width: 1000px;
+  overflow: hidden; }
+.main .thumb {
+  background-color: white;
+  width: 100px;
+  height: 130px;
+  margin: 10px;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  text-align: center; }
+  .main .thumb:hover {
+    background-color: #fc6e51;
+    color: white; }
+    .main .thumb:hover p {
+      color: white; }
+  .main .thumb .axiom-glyphicon {
+    margin: 10px;
+    vertical-align: center;
+    horizontal-align: center;
+    font-size: 2.5em; }
+  .main .thumb p {
+    font-size: 10pt;
+    padding: 0; }
+  .main .thumb .content {
+    overflow: hidden; }
+
+.showbox {
+  background: white;
+  min-width: 200px;
+  padding: 20px;
+  width: 650px; }
+  .showbox:hover, .showbox:focus, .showbox.focus, .showbox:active, .showbox.active {
+    background: white; }
